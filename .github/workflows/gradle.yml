@@ -30,7 +30,7 @@ jobs:
           java-version: 1.8
 
       - name: 3. Perform build
-        run: ./gradlew build publishToMavenLocal --scan
+        run: chmod +x ./gradlew && ./gradlew build publishToMavenLocal --scan
 
       - name: 4. Perform release
         # Release job, only for pushes to the main development branch
