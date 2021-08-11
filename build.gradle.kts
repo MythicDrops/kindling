@@ -1,11 +1,10 @@
 plugins {
-    kotlin("jvm") version "1.5.10" apply false
-    id("io.pixeloutlaw.gradle")
+    kotlin("jvm") version "1.5.21" apply false
+    id("dev.mythicdrops.gradle.project") version "1.0.1"
 }
 
 description = "Logging library for the JVM with no external dependencies"
 
-subprojects {
-    this@subprojects.description = rootProject.description
-    this@subprojects.version = rootProject.version
+mythicDropsRelease {
+    repository = "MythicDrops/kindling"
 }
