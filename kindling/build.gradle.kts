@@ -1,7 +1,9 @@
 plugins {
     kotlin("jvm")
-    id("org.jetbrains.kotlinx.binary-compatibility-validator") version "0.5.0"
+    id("org.jetbrains.kotlinx.binary-compatibility-validator") version "0.6.0"
 }
+
+description = "Logging library for the JVM with no external dependencies"
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
