@@ -1,13 +1,13 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        mavenLocal()
     }
 }
 
 plugins {
     // See https://jmfayard.github.io/refreshVersions
-    id("de.fayard.refreshVersions") version "0.10.0"
+    id("de.fayard.refreshVersions") version "0.11.0"
+
 }
 
 gradle.allprojects {
