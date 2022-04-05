@@ -13,5 +13,5 @@ contacts {
 }
 
 mythicDropsRelease {
-    repository = "MythicDrops/kindling"
+    repository.set("MythicDrops/kindling")
 }
