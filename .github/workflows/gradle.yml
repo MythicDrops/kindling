@@ -44,7 +44,7 @@ jobs:
         run: chmod +x ./gradlew && ./gradlew build publishToMavenLocal --scan
 
       - name: 4. Upload CodeCov Report
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v3
         with:
           files: "**/build/reports/jacoco/**/*.xml"
 
