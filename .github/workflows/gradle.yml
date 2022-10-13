@@ -18,7 +18,7 @@ jobs:
   gradle_wrapper_validation:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4   # docs: https://github.com/actions/checkout
+      - uses: actions/checkout@v2.5.0   # docs: https://github.com/actions/checkout
         with:
           fetch-depth: '0'  # https://github.com/shipkit/shipkit-auto-version#fetch-depth-on-ci
       - name: Gradle wrapper validation
