@@ -10,7 +10,7 @@ object Log {
         INFO,
         WARNING,
         ERROR,
-        ASSERT
+        ASSERT,
     }
 
     private val loggers = mutableListOf<Logger>()
