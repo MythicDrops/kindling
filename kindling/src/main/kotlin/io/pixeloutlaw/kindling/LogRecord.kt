@@ -12,5 +12,5 @@ data class LogRecord(
     val level: Log.Level,
     val tag: String = "",
     val message: String? = null,
-    val throwable: Throwable? = null
+    val throwable: Throwable? = null,
 )
