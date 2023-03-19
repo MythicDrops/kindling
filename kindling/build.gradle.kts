@@ -6,7 +6,7 @@ plugins {
 description = "Logging library for the JVM with no external dependencies"
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
+    implementation(kotlin("stdlib"))
 
     testImplementation(platform("org.junit:junit-bom:_"))
     testImplementation("org.junit.jupiter:junit-jupiter")
