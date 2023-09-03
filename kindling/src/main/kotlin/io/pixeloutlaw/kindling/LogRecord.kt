@@ -8,7 +8,7 @@ package io.pixeloutlaw.kindling
  * @property message Message to log
  * @property throwable [Throwable] that goes along with the message
  */
-data class LogRecord(
+public data class LogRecord(
     val level: Log.Level,
     val tag: String = "",
     val message: String? = null,

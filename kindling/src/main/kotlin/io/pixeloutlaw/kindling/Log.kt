@@ -3,8 +3,8 @@ package io.pixeloutlaw.kindling
 /**
  * Sends log messages to all registered [Logger]s.
  */
-object Log {
-    enum class Level {
+public object Log {
+    public enum class Level {
         VERBOSE,
         DEBUG,
         INFO,
@@ -18,51 +18,51 @@ object Log {
     /**
      * Adds a [Logger] to the list of delegated [Logger]s.
      */
-    fun addLogger(logger: Logger) {
+    public fun addLogger(logger: Logger) {
         loggers.add(logger)
     }
 
     /**
      * Removes all known [Logger]s.
      */
-    fun clearLoggers() {
+    public fun clearLoggers() {
         loggers.clear()
     }
 
     /**
      * Log at a [Level.VERBOSE] level.
      */
-    fun verbose(message: String, throwable: Throwable? = null, tag: String = "") =
+    public fun verbose(message: String, throwable: Throwable? = null, tag: String = ""): Unit =
         logAtLevel(Level.VERBOSE, tag, throwable, message)
 
     /**
      * Log at a [Level.DEBUG] level.
      */
-    fun debug(message: String, throwable: Throwable? = null, tag: String = "") =
+    public fun debug(message: String, throwable: Throwable? = null, tag: String = ""): Unit =
         logAtLevel(Level.DEBUG, tag, throwable, message)
 
     /**
      * Log at a [Level.INFO] level.
      */
-    fun info(message: String, throwable: Throwable? = null, tag: String = "") =
+    public fun info(message: String, throwable: Throwable? = null, tag: String = ""): Unit =
         logAtLevel(Level.INFO, tag, throwable, message)
 
     /**
      * Log at a [Level.WARNING] level.
      */
-    fun warn(message: String, throwable: Throwable? = null, tag: String = "") =
+    public fun warn(message: String, throwable: Throwable? = null, tag: String = ""): Unit =
         logAtLevel(Level.WARNING, tag, throwable, message)
 
     /**
      * Log at a [Level.ERROR] level.
      */
-    fun error(message: String, throwable: Throwable? = null, tag: String = "") =
+    public fun error(message: String, throwable: Throwable? = null, tag: String = ""): Unit =
         logAtLevel(Level.ERROR, tag, throwable, message)
 
     /**
      * Log at a [Level.ASSERT] level.
      */
-    fun assert(message: String, throwable: Throwable? = null, tag: String = "") =
+    public fun assert(message: String, throwable: Throwable? = null, tag: String = ""): Unit =
         logAtLevel(Level.ASSERT, tag, throwable, message)
 
     /**
