@@ -16,7 +16,7 @@ internal class LoggerTest {
         val assertLogger = TestLogger(Log.Level.ASSERT)
 
         // when
-        Log.Level.values().forEach {
+        Log.Level.entries.forEach {
             verboseLogger.log(it)
             debugLogger.log(it)
             infoLogger.log(it)

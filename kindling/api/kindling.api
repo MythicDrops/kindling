@@ -23,6 +23,7 @@ public final class io/pixeloutlaw/kindling/Log$Level : java/lang/Enum {
 	public static final field INFO Lio/pixeloutlaw/kindling/Log$Level;
 	public static final field VERBOSE Lio/pixeloutlaw/kindling/Log$Level;
 	public static final field WARNING Lio/pixeloutlaw/kindling/Log$Level;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
 	public static fun valueOf (Ljava/lang/String;)Lio/pixeloutlaw/kindling/Log$Level;
 	public static fun values ()[Lio/pixeloutlaw/kindling/Log$Level;
 }
