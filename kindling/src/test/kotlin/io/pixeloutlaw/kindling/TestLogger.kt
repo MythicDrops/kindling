@@ -5,6 +5,7 @@ package io.pixeloutlaw.kindling
  */
 class TestLogger(override val minimumLogLevel: Log.Level) : Logger() {
     val loggedMessages = mutableListOf<LogRecord>()
+
     override fun print(logRecord: LogRecord) {
         loggedMessages.add(logRecord)
     }
