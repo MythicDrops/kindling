@@ -12,7 +12,12 @@ public abstract class Logger {
     /**
      * Logs the given [message] at the given [level] if the level is allowed.
      */
-    public fun log(level: Log.Level, tag: String = "", message: String? = null, throwable: Throwable? = null) {
+    public fun log(
+        level: Log.Level,
+        tag: String = "",
+        message: String? = null,
+        throwable: Throwable? = null,
+    ) {
         if (level.ordinal >= minimumLogLevel.ordinal) {
             print(LogRecord(level, tag, message, throwable))
         }
