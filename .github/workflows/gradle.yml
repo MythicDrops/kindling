@@ -63,7 +63,7 @@ jobs:
           && github.ref == 'refs/heads/main'
           && github.repository == 'MythicDrops/kindling'
           && !contains(toJSON(github.event.commits.*.message), '[skip release]')
-        run: ./gradlew githubRelease publishToSonatype closeAndReleaseStagingRepository --scan
+        run: ./gradlew githubRelease publishToSonatype closeAndReleaseStagingRepositories --scan
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           SONATYPE_USER: ${{secrets.OSSRH_USERNAME}}
